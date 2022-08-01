@@ -2,9 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import "./app.scss";
 import Home from "./Pages/Home/Home";
-import Skills from "./Pages/Skills/Skills";
-import Portfolio from "./Pages/Portfolio/Portfolio";
-import Education from "./Pages/Education/Education";
+import About from "./Pages/About/About";
+import Blog from "./Pages/Blog/Blog";
 import Contacts from "./Pages/Contacts/Contacts";
 import Noutfound from "./Pages/Noutfound/Noutfound";
 
@@ -17,9 +16,8 @@ function App() {
       <main>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="education" element={<Education />} />
+          <Route path="about" element={<About />} />
+          <Route path="blog" element={<Blog />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="noutfound" element={<Noutfound />} />
         </Routes>

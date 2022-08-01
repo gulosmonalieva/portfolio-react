@@ -28,27 +28,13 @@ function Navbar() {
           <NavLink onClick={showMenu} to="/" className="navbar__menu-link ">
             Home
           </NavLink>
-          <NavLink
-            onClick={showMenu}
-            to="/skills"
-            className="navbar__menu-link"
-          >
-            Skills
+          <NavLink onClick={showMenu} to="/about" className="navbar__menu-link">
+            About
           </NavLink>
-          <NavLink
-            onClick={showMenu}
-            to="/education"
-            className="navbar__menu-link"
-          >
-            Education
+          <NavLink onClick={showMenu} to="/blog" className="navbar__menu-link">
+            Blog
           </NavLink>
-          <NavLink
-            onClick={showMenu}
-            to="/portfolio"
-            className="navbar__menu-link"
-          >
-            Portfolio
-          </NavLink>
+
           <NavLink
             onClick={showMenu}
             to="/contacts"
