@@ -1,11 +1,11 @@
 import React from "react";
 
-function Contacts() {
+function Contact() {
   return (
-    <section className="skills">
+    <section className="contact">
       <h1>My contacts Pages</h1>
     </section>
   );
 }
 
-export default Contacts;
+export default Contact;

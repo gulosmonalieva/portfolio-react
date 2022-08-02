@@ -11,6 +11,29 @@ function Navbar() {
     setMenuActive(!menuActive);
   };
 
+  const menuItems = [
+    {
+      id: 1,
+      menu: "Home",
+      link: "/",
+    },
+    {
+      id: 1,
+      menu: "About",
+      link: "about",
+    },
+    {
+      id: 1,
+      menu: "Blog",
+      link: "blog",
+    },
+    {
+      id: 1,
+      menu: "Contact",
+      link: "contact",
+    },
+  ];
+
   return (
     <nav className="navbar">
       <div className=" container navbar__container">
@@ -25,23 +48,18 @@ function Navbar() {
             menuActive ? " navbar__menu navbar__menu--show" : "navbar__menu"
           }
         >
-          <NavLink onClick={showMenu} to="/" className="navbar__menu-link ">
-            Home
-          </NavLink>
-          <NavLink onClick={showMenu} to="/about" className="navbar__menu-link">
-            About
-          </NavLink>
-          <NavLink onClick={showMenu} to="/blog" className="navbar__menu-link">
-            Blog
-          </NavLink>
-
-          <NavLink
-            onClick={showMenu}
-            to="/contacts"
-            className="navbar__menu-link"
-          >
-            Contacts
-          </NavLink>
+          {menuItems.map((menuItem) => {
+            return (
+              <NavLink
+                onClick={showMenu}
+                to={menuItem.link}
+                className="navbar__menu-link "
+                key={menuItem.id}
+              >
+                {menuItem.menu}
+              </NavLink>
+            );
+          })}
         </div>
       </div>
     </nav>

@@ -4,7 +4,7 @@ import "./app.scss";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
-import Contacts from "./Pages/Contacts/Contacts";
+import Contact from "./Pages/Contact/Contact";
 import Noutfound from "./Pages/Noutfound/Noutfound";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="contacts" element={<Contacts />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="noutfound" element={<Noutfound />} />
         </Routes>
       </main>
