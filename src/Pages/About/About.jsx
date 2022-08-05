@@ -2,6 +2,8 @@ import React from "react";
 import { FaHtml5, FaCss3Alt, FaSass, FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { motion } from "framer-motion";
+//import { Link } from "react-router-dom";
+
 import Portfolio from "../../images/home.png";
 import Portfolio2 from "../../images/Portfolio.png";
 import "./about.scss";
@@ -100,7 +102,7 @@ function About() {
                 custom={idx}
               >
                 <h4>{work.title}</h4>
-                <a href={work.href} target="_blank">
+                <a href={work.href} target="blank">
                   <img src={work.imgUrl} alt="fff" />
                 </a>
               </motion.li>
