@@ -18,17 +18,17 @@ function Navbar() {
       link: "/",
     },
     {
-      id: 1,
+      id: 2,
       menu: "About",
       link: "about",
     },
     {
-      id: 1,
+      id: 3,
       menu: "Blog",
       link: "blog",
     },
     {
-      id: 1,
+      id: 4,
       menu: "Contact",
       link: "contact",
     },
@@ -48,15 +48,15 @@ function Navbar() {
             menuActive ? " navbar__menu navbar__menu--show" : "navbar__menu"
           }
         >
-          {menuItems.map((menuItem) => {
+          {menuItems.map((menuItems) => {
             return (
               <NavLink
                 onClick={showMenu}
-                to={menuItem.link}
+                to={menuItems.link}
                 className="navbar__menu-link "
-                key={menuItem.id}
+                key={menuItems.id}
               >
-                {menuItem.menu}
+                {menuItems.menu}
               </NavLink>
             );
           })}

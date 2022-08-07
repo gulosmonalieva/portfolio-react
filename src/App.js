@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 import "./app.scss";
 import { Home, About, Blog, Contact, Noutfound } from "./Pages";
 
@@ -18,6 +18,9 @@ function App() {
           <Route path="noutfound" element={<Noutfound />} />
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
